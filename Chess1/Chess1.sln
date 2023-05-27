@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessProject", "ChessProject\ChessProject.csproj", "{9F2DE27F-EBDD-4C89-B97F-1FB5CB91E0A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{0B0FBFA1-4BCF-4C58-AC0A-E2D01AB2FDB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessLibrary", "ChessLibrary\ChessLibrary.csproj", "{0B0FBFA1-4BCF-4C58-AC0A-E2D01AB2FDB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

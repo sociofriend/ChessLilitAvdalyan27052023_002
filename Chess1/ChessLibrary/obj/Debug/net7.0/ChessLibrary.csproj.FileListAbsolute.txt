@@ -1,0 +1,12 @@
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/bin/Debug/net7.0/ChessLibrary.deps.json
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/bin/Debug/net7.0/ChessLibrary.dll
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/bin/Debug/net7.0/ChessLibrary.pdb
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.csproj.AssemblyReference.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.AssemblyInfoInputs.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.AssemblyInfo.cs
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.csproj.CoreCompileInputs.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.dll
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/refint/ChessLibrary.dll
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ChessLibrary.pdb
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/Debug/net7.0/ref/ChessLibrary.dll

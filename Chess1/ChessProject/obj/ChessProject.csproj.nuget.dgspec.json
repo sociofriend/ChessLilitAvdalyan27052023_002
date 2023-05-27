@@ -4,14 +4,14 @@
     "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj": {}
   },
   "projects": {
-    "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj": {
+    "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj",
-        "projectName": "ChessProject",
-        "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj",
+        "projectUniqueName": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj",
+        "projectName": "ChessLibrary",
+        "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj",
         "packagesPath": "/Users/lilitavdalyan/.nuget/packages/",
-        "outputPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/obj/",
+        "outputPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lilitavdalyan/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,7 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {
-              "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj": {
-                "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -68,14 +64,14 @@
         }
       }
     },
-    "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj": {
+    "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj",
-        "projectName": "ClassLibrary",
-        "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj",
+        "projectUniqueName": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj",
+        "projectName": "ChessProject",
+        "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/ChessProject.csproj",
         "packagesPath": "/Users/lilitavdalyan/.nuget/packages/",
-        "outputPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/obj/",
+        "outputPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/lilitavdalyan/.nuget/NuGet/NuGet.Config"
@@ -90,7 +86,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj": {
+                "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

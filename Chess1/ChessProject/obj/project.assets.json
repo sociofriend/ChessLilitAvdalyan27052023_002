@@ -1838,17 +1838,17 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "ClassLibrary/1.0.0": {
+      "ChessLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.TeamFoundationServer.Client": "19.221.0-preview"
         },
         "compile": {
-          "bin/placeholder/ClassLibrary.dll": {}
+          "bin/placeholder/ChessLibrary.dll": {}
         },
         "runtime": {
-          "bin/placeholder/ClassLibrary.dll": {}
+          "bin/placeholder/ChessLibrary.dll": {}
         }
       }
     }
@@ -6129,15 +6129,15 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "ClassLibrary/1.0.0": {
+    "ChessLibrary/1.0.0": {
       "type": "project",
-      "path": "../ClassLibrary/ClassLibrary.csproj",
-      "msbuildProject": "../ClassLibrary/ClassLibrary.csproj"
+      "path": "../ChessLibrary/ChessLibrary.csproj",
+      "msbuildProject": "../ChessLibrary/ChessLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ClassLibrary >= 1.0.0",
+      "ChessLibrary >= 1.0.0",
       "Microsoft.TeamFoundationServer.Client >= 19.221.0-preview"
     ]
   },
@@ -6167,8 +6167,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj": {
-              "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ClassLibrary/ClassLibrary.csproj"
+            "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj": {
+              "projectPath": "/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess1/ChessLibrary/ChessLibrary.csproj"
             }
           }
         }
