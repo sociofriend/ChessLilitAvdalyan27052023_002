@@ -1,4 +1,4 @@
 ﻿using ChessProject;
 
-Chess chess = new Chess();
-chess.RunChess();
+ChessLogic chessLogic = new ChessLogic();
+chessLogic.RunChess();

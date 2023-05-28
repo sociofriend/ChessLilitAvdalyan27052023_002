@@ -1,23 +1,11 @@
-using static System.Console;
 using ChessLibrary;
+using static System.Console;
 namespace ChessProject;
 
 
-public class Chess
+public class UserDataHandler
 {
-    // Properties
-    public string? Figure { get; set; } 
-    public string? AlgebraicNotation { get; set; }
-    public int[,]? InitialCoordinates { get; set; }
-    public int[,]? DestinationCoordinates { get; set; }
-    
-    
-    //methods
-    public void RunChess()
-    {
-        Coordinates coordinates = new Coordinates();
-        coordinates.AddLegalSteps(GetFigure(), GetCoordinates());
-    }
+    public string AlgebraicNotation { get; set; }
 
     /// <summary>
     /// Gets user input for figure, checks its validity:
@@ -26,7 +14,7 @@ public class Chess
     /// </summary>
     /// <param name="Figure">string type Property</param>
     /// <returns>returns string type Property</returns>
-    private string GetFigure()
+    public string GetFigure()
     {
         //gets user input for figure, checks validity and returns
         WriteLine("Choose a figure: press R for rook, N " +
@@ -49,7 +37,7 @@ public class Chess
     /// Gets user string input and breaks into two integers for i,j coordinates.
     /// </summary>
     /// <returns>two-dimensional array of cooridnates</returns>
-    private int[,]? GetCoordinates()
+    public int[,]? GetCoordinates()
     {
         Coordinates coordinates = new Coordinates();
         
@@ -62,12 +50,11 @@ public class Chess
         //check validity of user input and return two-dimensional array
         if ((AlgebraicNotation.Length == 2) && (AlgebraicNotation[0] >= 65 && AlgebraicNotation[0] <= 72) &&
             (AlgebraicNotation[1] >= 49 && AlgebraicNotation[1] <= 56))
-            return coordinates.CreateArray2D(((int)AlgebraicNotation[0] - 65),((int)AlgebraicNotation[1] - 49));
+            return coordinates.Create2DArrayByAlgebraicNotation(((int)AlgebraicNotation[0] - 65),((int)AlgebraicNotation[1] - 49));
         else
         {
             WriteLine("WRONG INPUT: Please input two-symbol command");
             return GetCoordinates();
         }
-    }
-    
+    }   
 }

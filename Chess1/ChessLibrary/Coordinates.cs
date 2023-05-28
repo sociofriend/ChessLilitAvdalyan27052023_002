@@ -20,7 +20,7 @@ public class Coordinates
    /// out of operations with coordinates.
    /// </summary>
    /// <param name="Coordinates">int type two-dimensional array</param>
-   public void AssignValues(int[,] Coordinates)
+   public void AssignValuesToLocalProperties(int[,] Coordinates)
    {
       for (int i = 0; i < 8; i++)
       {
@@ -32,8 +32,8 @@ public class Coordinates
                Colomn = j;
                Sum = i + j;
                Dif = i - j;
-               FigureNumber = ConvertToNumber(i, j);
-               FigureString = ConvertToString(i, j);
+               FigureNumber = ConvertCoordinatesToNumber(i, j);
+               FigureString = ConvertCoordinatesToString(i, j);
             }
          }
       }
@@ -45,7 +45,7 @@ public class Coordinates
    /// <param name="i">Integer type variable.</param>
    /// <param name="j">Integer type variable.</param>
    /// <returns>Integer.</returns>
-   public int ConvertToNumber(int i, int j)
+   public int ConvertCoordinatesToNumber(int i, int j)
    {
      return int.Parse(string.Concat(i.ToString(), j.ToString()));
    }
@@ -56,7 +56,7 @@ public class Coordinates
    /// <param name="i"></param>
    /// <param name="j"></param>
    /// <returns></returns>
-   public string ConvertToString(int i, int j)
+   public string ConvertCoordinatesToString(int i, int j)
    {
       return string.Concat(i.ToString(), j.ToString());
    }
@@ -67,7 +67,7 @@ public class Coordinates
    /// <param name="i">int type argument</param>
    /// <param name="j">int type argument</param>
    /// <returns>Returns two-dimensional array</returns>
-   public int[,] CreateArray2D(int i, int j)
+   public int[,] Create2DArrayByAlgebraicNotation(int i, int j)
    {
       int[,] coordinates = new int[8, 8];
       coordinates[i, j] = 1;
@@ -84,10 +84,10 @@ public class Coordinates
    {
       #region Figure objects
       Bishop bishop = new Bishop();
-      King king = new King();
+      //King king = new King();
       Knight knight = new Knight();
-      Queen queen = new Queen();
-      Rook rook = new Rook();
+      //Queen queen = new Queen();
+      //Rook rook = new Rook();
       #endregion
       
       switch (Figure)
@@ -95,19 +95,65 @@ public class Coordinates
          case "b": 
             bishop.AddLegalSteps(Figure, Coordinates);
             break;
-         case "K":
-            king.AddLegalSteps(Figure, Coordinates);
-            break;
+         // case "K":
+         //    king.AddLegalSteps(Figure, Coordinates);
+         //    break;
          case "N":
             knight.AddLegalSteps(Figure, Coordinates);
          break;
-         case "Q":
-            queen.AddLegalSteps(Figure, Coordinates);
-            break;
+         // case "Q":
+         //    queen.AddLegalSteps(Figure, Coordinates);
+         //    break;
          // case "R":
          //    rook.AddLegalSteps(Figure, Coordinates);
          //    break;
       }
+   }
+   
+   /// <summary>
+   /// 
+   /// </summary>
+   /// <param name="coordinatesWithLegalSteps"></param>
+   /// <param name="DestinationCoordinates"></param>
+   /// <returns></returns>
+   public bool CheckLegalStep(UserChoice userChoice)
+   {
+      if (userChoice.InitialCoordinates == userChoice.DestinationCoordinates)
+         return true;
+      int[,] coordinates = userChoice.InitialCoordinates;
+      AddLegalSteps(userChoice.Figure, coordinates);
+      
+      AssignValuesToLocalProperties(userChoice.DestinationCoordinates);
+      int destFigureNumber = FigureNumber;
+      
+      for (int i = 0; i < 8; i++)
+      {
+         for (int j = 0; j < 8; j++)
+         {
+            if (ConvertCoordinatesToNumber(i, j) == FigureNumber && coordinates[i, j] == 2)
+               return true;
+         }
+      }
+
+      return false;
+   }
+
+   public List<int> CollectLegalStepsInList(UserChoice userChoice)
+   {
+      List<int> legalStepsNumbers = new List<int>();
+      int[,] localInitialCoordiantes = userChoice.InitialCoordinates;
+      AddLegalSteps(userChoice.Figure, localInitialCoordiantes);
+      for (int i = 0; i < 8; i++)
+      {
+         for (int j = 0; j < 8; j++)
+         {
+            if (localInitialCoordiantes[i, j] == 2)
+            {  
+               legalStepsNumbers.Add(ConvertCoordinatesToNumber(i,j));
+            }
+         }
+      }
+      return legalStepsNumbers;
    }
    #endregion
 }
