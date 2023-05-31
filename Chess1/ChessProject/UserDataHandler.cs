@@ -37,7 +37,7 @@ public class UserDataHandler
     /// Gets user string input and breaks into two integers for i,j coordinates.
     /// </summary>
     /// <returns>two-dimensional array of cooridnates</returns>
-    public int[,]? GetCoordinates()
+    public int[,] GetCoordinates()
     {
         Coordinates coordinates = new Coordinates();
         

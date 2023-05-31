@@ -13,7 +13,7 @@ public class Coordinates
    public string FigureString { get; set; }
    #endregion
 
-   #region - Manipulations with coordinates
+
    /// <summary>
    /// Initialises properties by assigning the respective values
    /// out of operations with coordinates.
@@ -108,13 +108,12 @@ public class Coordinates
          //    break;
       }
    }
-   
+
    /// <summary>
-   /// 
+   /// Compares user's destination coordinates with the coordinates of the legal steps of the figure with initial coordinates.
    /// </summary>
-   /// <param name="coordinatesWithLegalSteps"></param>
-   /// <param name="DestinationCoordinates"></param>
-   /// <returns></returns>
+   /// <param name="userChoice">UserChoice type object.</param>
+   /// <returns>Returns boolean value.</returns>
    public bool CheckLegalStep(UserChoice userChoice)
    {
       if (userChoice.InitialCoordinates == userChoice.DestinationCoordinates)
@@ -136,7 +135,12 @@ public class Coordinates
 
       return false;
    }
-
+   
+   /// <summary>
+   /// Creates and returns List type collection of legal steps' coordinates coverted to number.
+   /// </summary>
+   /// <param name="userChoice">UserChoice type object.</param>
+   /// <returns>Returns List type collection.</returns>
    public List<int> CollectLegalStepsInList(UserChoice userChoice)
    {
       List<int> legalStepsNumbers = new List<int>();
@@ -154,6 +158,5 @@ public class Coordinates
       }
       return legalStepsNumbers;
    }
-   
-   #endregion
+
 }

@@ -2,9 +2,9 @@ namespace ChessLibrary.Figures;
 
 public class Knight
 {
-    //Initializing an integer type array of numbers identifying difference os the coordinates of the
-    //figure and potential legal steps.
-    int[] numbers = { -8, -12, -19, -21, 8, 12, 19, 21 };
+    int[] numbers = { -8, -12, -19, -21, 8, 12, 19, 21 }; //Initializing an integer type array of numbers
+                                                          //identifying difference os the coordinates of the f
+                                                          //igure and potential legal steps.
     
     /// <summary>
     ///Adds legal steps' coordinates to array. Receives two-dimensional array of integers identifying
@@ -73,7 +73,7 @@ public class Knight
     }
     
     /// <summary>
-    /// Creates a holistic chess board by figure, initial coordinates receiving from UserChoice object.
+    /// Creates a holistic chess board with figure, initial coordinates receiving from UserChoice object.
     /// </summary>
     /// <param name="userChoice">UserChoice type object, carrying information about figure, initial and
     /// destination coordinates' input by user.</param>
@@ -147,7 +147,8 @@ public class Knight
     
     private int figureNumber = 0; //i=1,j=2 => figureNumber = 12;
     private int numberOfSteps = 0; //required to get to destination coordinates
-    private string[,] figureStepsToAllCells = new string[8, 8]; //initialising an empty array
+    private string[,] figureStepsToAllCells = new string[8, 8]; //initialising an empty array for writing count of
+                                                                //steps for each cell from the initial coordinates
     
     /// <summary>
     /// Method identifies whether the string type array has an element with null value.

@@ -5,14 +5,13 @@ namespace ChessProject;
 
 public class BoardManipulations  //ditarkel statik methods
 {
-    #region Figure objects
+    //objects
     //Bishop bishop = new Bishop();
     // King king = new King();
     Knight knight = new Knight();
     // Queen queen = new Queen();
     // Rook rook = new Rook();
-    #endregion
-    
+
     /// <summary>
     /// Calls PrintBoardWithFigureSteps() parameterized method of respective class and
     /// transfers Userchoice type object.
@@ -96,6 +95,10 @@ public class BoardManipulations  //ditarkel statik methods
         return number;
     }
 
+    /// <summary>
+    /// Prints string type two-dimensional array passed as argument.
+    /// </summary>
+    /// <param name="array">String type two-dimensional array.</param>
     public void Print2DArray(string[,] array) // nshannerin guyn 
     {
         for (int i = 0; i < 10; i++)
