@@ -4,13 +4,12 @@ namespace ChessLibrary;
 
 public class Coordinates
 {
-   
    #region - Properties
    public int Row { get; set; }  
    public int Colomn { get; set; }  
    public int Sum { get; set; }  
    public int Dif { get; set; }  
-   public int FigureNumber { get; set; }
+   public int FigureNumber { get; set; } //figure-specific property
    public string FigureString { get; set; }
    #endregion
 
@@ -32,7 +31,7 @@ public class Coordinates
                Colomn = j;
                Sum = i + j;
                Dif = i - j;
-               FigureNumber = ConvertCoordinatesToNumber(i, j);
+               FigureNumber = ConvertCoordinatesToNumber(i, j); // tanel figures
                FigureString = ConvertCoordinatesToString(i, j);
             }
          }
@@ -67,7 +66,7 @@ public class Coordinates
    /// <param name="i">int type argument</param>
    /// <param name="j">int type argument</param>
    /// <returns>Returns two-dimensional array</returns>
-   public int[,] Create2DArrayByAlgebraicNotation(int i, int j)
+   public int[,] Create2DArrayByCoordinates(int i, int j)
    {
       int[,] coordinates = new int[8, 8];
       coordinates[i, j] = 1;
@@ -155,5 +154,6 @@ public class Coordinates
       }
       return legalStepsNumbers;
    }
+   
    #endregion
 }

@@ -50,7 +50,7 @@ public class UserDataHandler
         //check validity of user input and return two-dimensional array
         if ((AlgebraicNotation.Length == 2) && (AlgebraicNotation[0] >= 65 && AlgebraicNotation[0] <= 72) &&
             (AlgebraicNotation[1] >= 49 && AlgebraicNotation[1] <= 56))
-            return coordinates.Create2DArrayByAlgebraicNotation(((int)AlgebraicNotation[0] - 65),((int)AlgebraicNotation[1] - 49));
+            return coordinates.Create2DArrayByCoordinates(((int)AlgebraicNotation[0] - 65),((int)AlgebraicNotation[1] - 49));
         else
         {
             WriteLine("WRONG INPUT: Please input two-symbol command");

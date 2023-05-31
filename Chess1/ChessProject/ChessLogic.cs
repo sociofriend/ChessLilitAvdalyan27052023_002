@@ -18,12 +18,12 @@ public class ChessLogic
     public void RunChess()
     {
         ChooseAction();
+        RunChess();
     }
     
 
     public void ChooseAction()
     {
-
         UserDataHandler userDataHandler = new UserDataHandler();
         Figure = userDataHandler.GetFigure();
         InitialCoordinates = userDataHandler.GetCoordinates();
@@ -52,12 +52,11 @@ public class ChessLogic
                 boardManipulations.Print2DArray(boardManipulations.PrintBoardWithFigureSteps(userChoice));
                 break;
             case 2 :
-                boardManipulations.CheckAccessForDestinationCoordinate(userChoice);
+                WriteLine(boardManipulations.CheckAccessForDestinationCoordinate(userChoice));
                 break;
             case 3:
-                boardManipulations.FindMinimumNumberOfStepsToDestination(userChoice);
+                WriteLine((boardManipulations.FindMinimumNumberOfStepsToDestination(userChoice)));
                 break;
         }
-
     }
 }
