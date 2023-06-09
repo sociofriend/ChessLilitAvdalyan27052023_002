@@ -159,4 +159,22 @@ public class Coordinates
       return legalStepsNumbers;
    }
 
+   
+   public List<int> CollectLegalStepsInList(string figure, int[,] array)
+   {
+      List<int> legalStepsNumbers = new List<int>();
+      int[,] localInitialCoordiantes = array;
+      AddLegalSteps(figure, localInitialCoordiantes);
+      for (int i = 0; i < 8; i++)
+      {
+         for (int j = 0; j < 8; j++)
+         {
+            if (localInitialCoordiantes[i, j] == 2)
+            {  
+               legalStepsNumbers.Add(ConvertCoordinatesToNumber(i,j));
+            }
+         }
+      }
+      return legalStepsNumbers;
+   }
 }

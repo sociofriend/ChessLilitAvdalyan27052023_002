@@ -4,15 +4,15 @@ using Microsoft.VisualStudio.Services.Users;
 
 namespace ChessLibrary.Figures;
 
-public class Bishop
+public class Bishop : Figure
 {
     /// <summary>
-    ///Recieves two-dimensional array of integers identifying the place of the
-    ///figure, assignes the value of "2" to coordinates matching the legal steps' requirements.
+    ///Receives two-dimensional array of integers identifying the place of the
+    ///figure, assigns the value of "2" to coordinates matching the legal steps' requirements.
     /// </summary>
     /// <param name="figure">String type variable.</param>
     /// <param name="coordinates">Two-dimensional array of integers.</param>
-    public void AddLegalSteps(string Figure, int[,] Coordinates)
+    public override void AddLegalSteps(string Figure, int[,] Coordinates)
     { 
         Coordinates coordinates = new Coordinates();
         coordinates.AssignValuesToLocalProperties(Coordinates);

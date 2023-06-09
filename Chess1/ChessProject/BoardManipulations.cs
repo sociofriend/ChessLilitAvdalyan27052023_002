@@ -6,11 +6,11 @@ namespace ChessProject;
 public class BoardManipulations  //ditarkel statik methods
 {
     //objects
-    //Bishop bishop = new Bishop();
-    // King king = new King();
+    Bishop bishop = new Bishop();
+    King king = new King();
     Knight knight = new Knight();
-    // Queen queen = new Queen();
-    // Rook rook = new Rook();
+    Queen queen = new Queen();
+    Rook rook = new Rook();
 
     /// <summary>
     /// Calls PrintBoardWithFigureSteps() parameterized method of respective class and
@@ -25,12 +25,12 @@ public class BoardManipulations  //ditarkel statik methods
         //switches to respective class method by user input
         switch (userChoice.Figure)
         {
-            //case "b":
-                //array = bishop.PrintBoardWithFigureSteps(userChoice);
-                //break;
-            // case "K":
-            //     king.PrintBoardWithFigureSteps(userChoice);
-            //     break;
+            case "b":
+                array = bishop.PrintBoardWithFigureSteps(userChoice);
+                break;
+             // case "K":
+             //     king.PrintBoardWithFigureSteps(userChoice);
+             //     break;
             case "N":
                 array = knight.PrintBoardWithFigureSteps(userChoice);
                 break;

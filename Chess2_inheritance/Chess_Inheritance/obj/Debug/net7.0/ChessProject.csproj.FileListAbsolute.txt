@@ -1,0 +1,5 @@
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess2_inheritance/Chess_Inheritance/obj/Debug/net7.0/ChessProject.csproj.AssemblyReference.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess2_inheritance/Chess_Inheritance/obj/Debug/net7.0/ChessProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess2_inheritance/Chess_Inheritance/obj/Debug/net7.0/ChessProject.AssemblyInfoInputs.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess2_inheritance/Chess_Inheritance/obj/Debug/net7.0/ChessProject.AssemblyInfo.cs
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/Chess2_inheritance/Chess_Inheritance/obj/Debug/net7.0/ChessProject.csproj.CoreCompileInputs.cache

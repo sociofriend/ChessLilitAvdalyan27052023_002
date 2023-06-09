@@ -1,0 +1,6 @@
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/bin/Debug/ChessLilitAvdalyan20230603001.exe
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/bin/Debug/ChessLilitAvdalyan20230603001.pdb
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/obj/Debug/ChessLilitAvdalyan20230603001.csproj.AssemblyReference.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/obj/Debug/ChessLilitAvdalyan20230603001.csproj.CoreCompileInputs.cache
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/obj/Debug/ChessLilitAvdalyan20230603001.exe
+/Users/lilitavdalyan/Desktop/OOP_Chess_Homework/ChessLilitAvdalyan20230603001/obj/Debug/ChessLilitAvdalyan20230603001.pdb

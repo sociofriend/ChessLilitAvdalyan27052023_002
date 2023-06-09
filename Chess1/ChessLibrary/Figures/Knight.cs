@@ -3,8 +3,14 @@ namespace ChessLibrary.Figures;
 public class Knight
 {
     int[] numbers = { -8, -12, -19, -21, 8, 12, 19, 21 }; //Initializing an integer type array of numbers
-                                                          //identifying difference os the coordinates of the f
-                                                          //igure and potential legal steps.
+                                                          //identifying difference of the coordinates of the
+                                                          //figure and potential legal steps.
+                                                          
+    private int figureNumber = 0; //i=1,j=2 => figureNumber = 12;
+    private int numberOfSteps = 0; //required to get to destination coordinates
+    private string[,] figureStepsToAllCells = new string[8, 8]; //initialising an empty array for writing count of
+                                                                //steps for each cell from the initial coordinates
+                                                          
     
     /// <summary>
     ///Adds legal steps' coordinates to array. Receives two-dimensional array of integers identifying
@@ -145,11 +151,6 @@ public class Knight
         return coordinates.CheckLegalStep(userChoice);
     }
     
-    private int figureNumber = 0; //i=1,j=2 => figureNumber = 12;
-    private int numberOfSteps = 0; //required to get to destination coordinates
-    private string[,] figureStepsToAllCells = new string[8, 8]; //initialising an empty array for writing count of
-                                                                //steps for each cell from the initial coordinates
-    
     /// <summary>
     /// Method identifies whether the string type array has an element with null value.
     /// </summary>
@@ -161,7 +162,7 @@ public class Knight
 
 			for(int i =0; i < 8; i++)
 			{
-				for(int j=0; i<8; i++)
+				for(int j=0; j<8; j++)
 				{
 					if (array[i, j] == null)
 					{
@@ -172,6 +173,7 @@ public class Knight
 			}
 			return isFull;		
 		}
+    
     int returnNumber;
     public int FindMinimumNumberOfStepsToDestination(UserChoice userChoice)
     {

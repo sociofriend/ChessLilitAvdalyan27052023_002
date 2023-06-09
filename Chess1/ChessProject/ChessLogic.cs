@@ -16,18 +16,7 @@ public class ChessLogic
     //creating object to store user input data
     UserDataHandler _userDataHandler = new UserDataHandler();
     
-    /// <summary>
-    /// Calls ChooseAction() method to get user input for further actions, then calls itself to restart the project automatically.
-    /// </summary>
-    public void RunChess()
-    {
-        ChooseAction();
-        RunChess();
-    }
-    
-    /// <summary>
-    /// Gets user choice on further action.
-    /// </summary>
+
     public void ChooseAction()
     {
         UserDataHandler userDataHandler = new UserDataHandler();
@@ -71,6 +60,33 @@ public class ChessLogic
             case 3:
                 WriteLine((boardManipulations.FindMinimumNumberOfStepsToDestination(userChoice)));
                 break;
+        }
+    }
+
+    public void ChooseProject()
+    {
+        Console.WriteLine("Choose project: 1 for board manipulations, 2 for the game.");
+        if (int.TryParse(Console.ReadLine(), out int result))
+        {
+            if (result == 1)
+            {
+                ChooseAction();
+                ChooseProject();
+            }
+            else if (result == 2)
+            {
+                //
+            }
+            else
+            {
+                Console.Write("Wrong input. Please follow the instructions. ");
+                ChooseProject();
+            }
+        }
+        else
+        {
+            Console.Write("Wrong input. Please follow the instructions. ");
+            ChooseProject();
         }
     }
 }
